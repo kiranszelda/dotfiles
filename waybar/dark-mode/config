@@ -1,0 +1,94 @@
+{
+  "layer": "top",
+  "position": "bottom",
+    "modules-left": ["custom/arch", "custom/firefox", "custom/kitty", "custom/code", "custom/folder", "custom/discord"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["cpu", "temperature", "backlight", "pulseaudio", "battery", "clock"],
+    "custom/arch": {
+      "format": " ",
+      "tooltip": false,
+      "on-click": "exec rofi -show run",
+    },
+    "custom/firefox": {
+      "format": "󰈹",
+      "tooltip": false,
+      "on-click": "exec firefox",
+    },
+    "custom/kitty": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "exec kitty",
+    },
+    "custom/code": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "exec notepad++",
+    },
+    "custom/folder": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "exec thunar",
+    },
+    "custom/discord": {
+      "format": "󰙯",
+      "tooltip": false,
+      "on-click": "exec discord",
+    },
+	  "hyprland/workspaces": {
+        "active-only": false,
+        "all-outputs": true,
+        "disable-scroll": false,
+        "on-scroll-up": "hyprctl dispatch workspace -1",
+        "on-scroll-down": "hyprctl dispatch workspace +1",
+		"format": "{icon}",
+		"on-click": "activate",
+		"format-icons": {
+			"1": "󰈹",
+			"2": "",
+			"3": "",
+			"4": "󰙯",
+			"5": "",
+
+			"urgent": " ",
+			"active": " ",
+			"default": " ",
+			"sort-by-number": true
+		  },
+    },
+
+    "clock": {
+      "format": "{:%H:%M}",
+      "format-alt": "{:%R  %d·%m·%y}",
+      "tooltip": false,
+  },
+    "cpu": {
+	    "interval": 10,
+	    "format": "{}% ",
+	    "max-length": 10
+    },
+    "temperature": {
+      "format": "{temperatureC}°C "
+    },
+    "backlight": {
+      "device": "intel_backlight",
+      "format": "<span color='#e4efe8'>{icon}</span> {percent}%",
+      "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "pulseaudio": {
+      "format": "<span color='#e4efe8'>{icon}</span> {volume}%",
+      "format-muted": "󰝟",
+      "tooltip": false,
+      "format-icons": {
+        "headphone": "",
+        "default": ["", "", "󰕾", "󰕾", "󰕾", "", "", ""]
+	},
+      "scroll-step": 1,
+    },
+    "battery": {
+      "format": "<span color='#e4efe8'>{icon}</span> {capacity}%",
+      "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+      "format-charging": "<span color='#e4efe8'>󰂄 </span> {capacity}%",
+      "tooltip": false,
+    },
+
+}

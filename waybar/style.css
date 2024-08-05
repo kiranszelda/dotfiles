@@ -1,0 +1,106 @@
+* {
+    border: none;
+    font-family: "SF Pro Display", "Symbols Nerd Font Mono";
+    font-size: 14px;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    min-height: 30px;
+}
+
+window#waybar {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 0px;
+    background-color: #e4efe8;
+    opacity: 0.85;
+}
+
+#custom-arch,
+#custom-firefox,
+#custom-kitty,
+#custom-code,
+#custom-folder,
+#custom-discord,
+#custom-steam,
+#workspaces {
+    border-radius: 0px;
+    background-color: #e4efe8;
+    color: #424242;
+    font-size: 18px;
+    margin-top: 2px;
+    margin-bottom: 7px;
+    margin-right: 15px;
+    padding-top: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#custom-arch {
+    font-size: 20px;
+    margin-left: 15px;
+    border-top-left-radius: 10px;
+    color: #424242;
+}
+
+#custom-firefox {
+    font-size: 18px;
+    margin-left: 7px;
+    border-top-left-radius: 0px;
+    color: #424242;
+}
+
+#custom-kitty {
+    font-size: 18px;
+    margin-left: 7px;
+    border-top-left-radius: 0px;
+    color: #424242;
+}
+
+#custom-code {
+    font-size: 18px;
+    margin-left: 7px;
+    border-top-left-radius: 0px;
+    color: #424242;
+}
+
+#custom-folder {
+    font-size: 18px;
+    margin-left: 7px;
+    border-top-left-radius: 0px;
+    color: #424242;
+}
+
+#custom-discord {
+    font-size: 18px;
+    margin-left: 7px;
+    border-top-left-radius: 0px;
+    color: #424242;
+}
+
+#workspaces button {
+    background: #e4efe8;
+    color: #424242;
+}
+
+#clock,
+#backlight,
+#pulseaudio,
+#cpu,
+#temperature,
+#battery {
+    border-radius: 0px;
+    background-color: #e4efe8;
+    color: #424242;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-right: 15px;
+}
+
+#clock {
+    border-top-right-radius: 10px;
+    margin-right: 15px;
+}
+
