@@ -34,4 +34,5 @@ mv -f ~/kiransdotfiles/waybar ~/.config/waybar
 mv -f ~/kiransdotfiles/wallpapers ~/Pictures/wallpapers
 mv -f ~/kiransdotfiles/rofi-power-menu ~
 mv -f ~/kiransdotfiles/.zshrc ~
+rm -rf ~/kiransdotfiles
 echo "Done!"</code>
