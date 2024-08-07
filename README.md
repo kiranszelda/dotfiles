@@ -12,7 +12,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 Installation
 
-<b> UNTESTED </b>
+<b> EVERYTHING BELOW IS UNTESTED, BACKUP ALL FILES </b>
 
 <code>git clone https://github.com/kiranszelda/dotfiles.git ~/kiransdotfiles
 cd ~/kiransdotfiles
